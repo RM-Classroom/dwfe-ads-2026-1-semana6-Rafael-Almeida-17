@@ -1,0 +1,313 @@
+/* Estrutura */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    background-color: snow;
+    background-image: url(images/logo.png);
+    background-position: 10px;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+main {
+    width: 100%;
+}
+
+footer {
+    background-color: whitesmoke;
+}
+
+/* Menu */
+
+.menu {
+    float: right
+}
+
+.menu ul {
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+}
+
+.menu ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+}
+
+.menu ul li a:hover {
+    background-color: #FF7F7F;
+    border-radius: 5px;
+}
+
+.pesquisar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.pesquisar input {
+    background-color: lightblue;
+    padding: 8px ;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+}
+
+.pesquisar button {
+    padding: 8px 12px;
+    border: none;
+    background: lightblue;
+    color: white;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+/* Conteúdo */
+
+/* Banner */
+
+.banner {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px;
+}
+
+.banner img {
+    display: block;
+    width: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.banner h2 {
+    font-weight: bolder;
+    color: darkseagreen;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: white;
+}
+
+/* Notícias */
+
+.noticias {
+    margin-bottom: 40px;
+}
+
+.noticias h1 {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: blanchedalmond;
+}
+
+.noticia {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    clear: both;
+}
+
+.noticia img {
+    display: block;   
+    width: 320px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    
+}
+
+.noticia h3 {
+    font-weight: bolder;
+    color: darkseagreen;
+}
+
+.data {
+    font-weight: 600;
+    color: lightskyblue;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    float: right;
+}
+
+.subtitulo {
+    font-weight: 500;
+    color: darkseagreen;
+    margin-bottom: 10px;
+}
+
+.noticia p {
+    font-weight: 700;
+    color: white;
+}
+
+/* Jogos */
+
+.jogos {
+    width: 100%;
+}
+
+.jogos h1 {
+    text-align: left;
+    padding: 20px;
+    margin: 50px 0 10px 0;
+    color: blanchedalmond;
+}
+
+.cardsjogos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    
+    gap: 20px;
+}
+
+ .ultimosjogos {
+    background: whitesmoke;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.ultimosjogos img {
+    align-items: center;
+}
+
+.ultimosjogos h3 {
+    color: red;
+}
+
+.liga {
+    text-align: center;
+    color: chocolate;
+}
+
+.datajogo {
+    text-align: center;
+    color: blueviolet;
+}
+
+/* Rodapé */
+
+footer {
+    background: #c8102e;
+    color: white;
+    padding: 20px;
+}
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.rodape h1 {
+    color: gold;
+}
+
+.rodape h3 {
+    margin-bottom: 10px;
+}
+
+.rodape ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.rodape ul li a {
+    text-decoration: none;
+    color: lightskyblue;
+}
+
+.copy {
+    text-align: center;
+    font-size: 14px;
+}
+
+section {
+    margin: 20px;
+}
+
+/* CSS Menu Mobile */
+
+@media (max-width: 768px) {
+
+    /* 🔴 Banner vira coluna */
+    .banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    /* 📰 Notícias viram coluna */
+    .noticia {
+        flex-direction: column;
+    }
+
+    .noticia img {
+        width: 100%;
+    }
+
+    .data {
+        float: none;
+        text-align: left;
+    }
+
+    /* ⚽ Jogos em 1 coluna */
+    .cardsjogos {
+        grid-template-columns: 1fr;
+    }
+
+    /* 🔗 Menu empilhado */
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* 🔍 Pesquisa centralizada */
+    .pesquisar {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    /* 🦶 Rodapé em coluna */
+    .rodape {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
