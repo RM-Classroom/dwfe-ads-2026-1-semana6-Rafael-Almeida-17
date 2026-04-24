@@ -10,18 +10,18 @@ No trabalho dessa semana vamos alterar o projeto para que a responsividade da ho
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
+- Nome: Rafael Almeida Ferreira
+- Matricula: 924698
 - Proposta de projeto escolhida:
 - Breve descrição sobre seu projeto:
 
 ## Print da versão responsiva com Bootstrap [DESKTOP]
 
-<<  COLOQUE A IMAGEM AQUI >>
+<<  ![desktop](images/desktop1.png) >>
 
 ## Print da versão responsiva com Bootstrap [MOBILE] (*)
 
-<<  COLOQUE A IMAGEM AQUI >>
+<<  ![mobile](images/mobile1.png) >>
 
 
 (*) Utilize as ferramentas do desenvolvedor do seu navegador para colocar no modo reponsivo, escolha um celular qualquer e recarregue a página antes de tirar o print. 
